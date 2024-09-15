@@ -14,6 +14,13 @@ const server = http.createServer((req,res)=>{
         res.writeHead(404, { 'Content-Type': 'text/plain' });
         res.end('Page Not Found\n');
       }
+      // const data = {
+      //   name: "Krish",
+      //   job: "Developer"
+      // };
+    
+      // res.writeHead(200, { 'Content-Type': 'application/json' });
+      // res.end(JSON.stringify(data));
 });
 
 server.listen(9000,()=>{
